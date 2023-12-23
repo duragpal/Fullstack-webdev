@@ -1,0 +1,20 @@
+/*--Gets applied only when outer class is inside inner class .. use > for direct decendent not any child-->*/
+/*Decendent combinator*/
+.outer .inner{
+    background-color: aqua;
+}
+
+/*Child combinator*/
+.left > .right{
+    background-color: green;
+}
+
+/*Adjacent Combinator*/
+div + p {
+    color: red;
+}
+
+/*General sibling : any para that comes after div within any level*/
+div ~ p{
+    font-weight: bold;
+}
