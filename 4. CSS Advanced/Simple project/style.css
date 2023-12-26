@@ -2,47 +2,42 @@
     background-color: aqua;
     height: 500px;
     width: 500px;
-    transition : 2s;
+    position: relative;
    
     
 }
-div div>div{
-    display: inline-block;
-}
-#one{
+
+#one{ display: inline-block;
     background-color:red;
     height: 50px;
     width: 50px;
-    margin-left: 100px;
-    
+    margin-left: 100px;    
+    animation: upanddown 1.5s infinite alternate;
+}
     
  
-}
+
 #two{
+    display: inline-block;
     background-color:red;
     height: 50px;
     width: 50px;
-    margin-left: 300px;
+    margin-left: 250px;
     
+    animation: upanddown 1s infinite alternate;
 }
-#two:hover{
-        animation-name: upanddown;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        
-    }    
 
-    
-
-
-#one:hover{
-    animation-name: upanddown;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    
+.player{
+    position: absolute;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin-top: 180px;
 }
+    
+
 @keyframes upanddown {
-    50%{transform: translateY(450px);}
-    51%{transform: translateY(450px);}
+    0%{transform: translateY(0);}
+    100%{transform: translateY(450px);}
     
 }

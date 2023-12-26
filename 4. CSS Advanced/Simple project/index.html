@@ -10,7 +10,38 @@
     <div class="main">
         <div id="one"></div>
         <div id="two"></div>
-        <div id="three"></div>
+        <div class="player"></div>
     </div>
+    <!-- <script>
+        const player = document.querySelector('.player');
+          document.addEventListener('keydown', function (event) {
+          if (event.key === 'ArrowRight') {
+            player.style.left = (parseInt(getComputedStyle(player).left) + 10) + 'px';
+          } else if (event.key === 'ArrowLeft') {
+            player.style.left = (parseInt(getComputedStyle(player).left) - 10) + 'px';
+          }
+        });
+      </script> -->
+      <script>
+        const player = document.querySelector('.player');
+      
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'ArrowRight') {
+            const currentLeft = parseInt(getComputedStyle(player).left);
+            const newLeft = currentLeft + 10;
+            // Check if the new position is within the container's bounds 500px
+            if (newLeft + 50 <= 500) {
+              player.style.left = newLeft + 'px';
+            }
+          } else if (event.key === 'ArrowLeft') {
+            const currentLeft = parseInt(getComputedStyle(player).left);
+            const newLeft = currentLeft - 10;
+            // Check if the new position is within the container's bounds
+            if (newLeft >= 0) {
+              player.style.left = newLeft + 'px';
+            }
+          }
+        });
+      </script>
 </body>
 </html>
