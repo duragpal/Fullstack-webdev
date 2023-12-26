@@ -1,0 +1,72 @@
+Javascript:
+- Object Notation (JSON)
+- Functions
+- Lambda Langauge
+- Loose Typing=need not to be same datatype for single entity
+==========Limitations
+- Global variable
+==========
+webel is code converter.. to convert typescript to javascript
+=============
+define variables. = var, let, const
+conditional = evaluates truthy and falsy values.. 
+false = null,undefined, ' ', 0, NaN (not a number)
+use let more...
+=======================================
+Object :
+var tomy = {
+name:"tommy"
+breed: " Labrador"
+birthday:"23 Dec"
+father:{ name :"jomy"
+breed: "Labrador"
+}
+
+}
+======================
+Retrieval:
+var myPetname = tommy.name
+var myPetname = tommy["breed"]
+var father=tommoy.father.name
+not present = undefined.. (to prevent &.)
+============================================
+Updating Objects:
+tommy.name = "abc"
+tommy["name"] = 'abc'
+==========================================
+Pass by Reference:
+var ruby=tommy; (ruby only points to tommy not another allocation)
+ruby.name = "Ruby"
+tommy.name   === it will give tommy
+==========================================
+Enumeration: (Creating DEEP COPY of tommy to ruby)
+for in loop
+
+for (property in tommy){
+print(property);
+print(tommy[property]);
+}
+===================================
+typeof
+==========================
+Prototype:
+var obj={};
+obj.xyz    //undefined
+obj.prototype  //not undefined ..
+=================================
+Creating copy of tommy in ruby:
+var ruby={};
+ruby.__proto__=tommy;
+ruby.name  //it will show tommy
+tommy.name="Ruby"
+tommy.name // it will show tommy i.e doesn't create a deep copy
+======================
+delete ruby.name //it will give tommy
+=========================
+Global Abetment:
+var DRONA = {};
+var users=[]; (dont use it)
+DRONA.users=[];
+
+
+

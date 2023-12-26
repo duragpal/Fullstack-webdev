@@ -1,0 +1,48 @@
+.main {
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    transition : 2s;
+   
+    
+}
+div div>div{
+    display: inline-block;
+}
+#one{
+    background-color:red;
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
+    
+    
+ 
+}
+#two{
+    background-color:red;
+    height: 50px;
+    width: 50px;
+    margin-left: 300px;
+    
+}
+#two:hover{
+        animation-name: upanddown;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        
+    }    
+
+    
+
+
+#one:hover{
+    animation-name: upanddown;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes upanddown {
+    50%{transform: translateY(450px);}
+    51%{transform: translateY(450px);}
+    
+}
