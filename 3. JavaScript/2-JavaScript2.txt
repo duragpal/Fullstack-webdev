@@ -1,0 +1,100 @@
+Functional object:
+var tommy= { ..... }
+tommy.newkey= ....
+=====================
+Function:
+var myfunc= function(){---
+----
+----}
+myfunc.someproperty="value" //valid syntax
+var arr=[];
+
+arr.push(myfunc)   //array of functions
+
+var add = func(a,b){
+return a+b;}
+
+Write a function for sort...:
+
+var sort= function(arr, comparator){
+
+}
+calling:::: 
+sort([1,2,3],function(a,b)){
+return (a-b)};
+===================
+var printHello = function{
+print("Hello");
+};
+
+var callTwice = function(func){
+func()
+func()
+}
+
+callTwice(printHello);
+=====================================
+Context
+=====================
+this keyword
+
+var myfunc = {-------} //this will be defined
+//value of this depend on how function is called
+===========================
+Curry:
+--------------------==
+Invocation Patterns:
+
+1)Method Invocation:
+var tommy = {
+name: ...
+breed: ...
+eat: func(){...}
+}
+
+tommy.eat()
+
+2) Apply Pattern
+eat.apply(context,[array of arguments])
+eg... eat.apply(tommy,["Biscuit"])
+tommy.eat("Biscuit");   ///same as above
+
+3) Constructor
+var Dog=function(config){    //capital letter..like a class 
+ this.name= config.name
+};
+
+var tommy = new Dog({name: "Tommy"});
+tommy.name   //Tommy
+======================
+Prototype:
+
+var Animal= function(){
+}
+Animal.prototype.eat=function(food){
+this.lastMeal=food;
+}
+
+var a1= new Animal("Adam");
+a1.name     // Adam
+a1.eat("apple");
+a1.lastmeal  //apple
+
+===================
+Dog = function(name,breed){
+this.name = name;
+this.breed = breed;
+}
+Dog.prototype = new Animal();
+Dog.prototype.bark=function(){.........}
+
+var tommy = new Dog("Tommy","Labrador")
+tommy.eat    //inheritance in functions
+tommy.bark
+
+==============================
+Global Abetment:
+
+var MYAPP = {};
+MYAPP.Dog=.....
+MYAPP.Animal = ....

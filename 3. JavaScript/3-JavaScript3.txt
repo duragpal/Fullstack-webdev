@@ -1,0 +1,20 @@
+Scope:
+1) function level scope
+var myfunc= func(){
+var a=2;    // available everywhere
+}
+
+=======================
+CALLBACK:
+var myfunc = function(){
+//send request to google.com
+takes 5 second
+--> print the result
+}
+
+var show_result = function(result){
+print(result);
+}
+submit_code(code,show_result);  //showresult== it is callback fn
+
+Works on AJAX = Async Javascript Request

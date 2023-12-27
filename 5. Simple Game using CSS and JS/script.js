@@ -1,0 +1,1 @@
+let gamebox = document.getElementById('gamebox');
