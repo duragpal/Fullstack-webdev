@@ -1,0 +1,3 @@
+npm run build
+
+now drag and drop build folder into "sites" in netlify
