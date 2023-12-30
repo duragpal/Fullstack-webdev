@@ -1,0 +1,9 @@
+movie-list
+home
+about
+======
+use Params()
+<link>  == react takes care.. no loading
+: denotes dynamic routing
+use $ symbol for routing
+` for variable name
