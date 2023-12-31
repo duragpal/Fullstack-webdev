@@ -1,0 +1,15 @@
+Responsive Website Design
+== Fluid Design -- Any sreen size, website doesn't break
+
+==ADAPTIVE===
+not fluid
+three different UI, developed separately.
+--redundant but simple
+
+==RESPONSIVE====
+fluid
+one UI, one design, fits all
+---complex to develop
+======================================
+RESP WEB DESIGN::
+fliud grids, flexible images, media queries are three pillars of resp web design
