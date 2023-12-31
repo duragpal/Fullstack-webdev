@@ -1,0 +1,29 @@
+body {
+  color: red;
+}
+
+.main {
+  font-size: 5rem;
+}
+.secondary {
+  font-size: 3rem;
+}
+
+/* @media screen and (max-width: 500px) {
+  body {
+    color: blue;
+  }
+} */
+
+/* @media print {
+  body {
+    color: blue;
+  }
+} */
+
+/* Media Queries with orientation  use , to use OR*/
+@media (orientation: landscape) and (max-width: 500px) {
+  .main {
+    color: cyan;
+  }
+}

@@ -13,3 +13,25 @@ one UI, one design, fits all
 ======================================
 RESP WEB DESIGN::
 fliud grids, flexible images, media queries are three pillars of resp web design
+
+=========1. CSS UNITS
+a) fixed : px   (no responsive)
+b) relative units:  em, rem, % vh,vw,vmin,vmax,ch
+
+em = font-size relative to font size of parent.
+2em = 2*(fontsize of parent)
+em font sizes compound.. as it looks font size of parent
+=======================
+rem = root em
+font-size: x rem; //it means x*fs(root element)
+=====================
+em for padding , margin == looks at current font size
+=========================
+4) viewport units
+vw, vh, vmin, vmax
+1 vw = 1% of screen width
+==============================
+Media Queries:
+@media ____(all, screen,print,speech) and(<list of coditions>)
+
+Note: If same selector exists at multiple locations, selector closer to EOF(end of file) will take precedence.
