@@ -1,0 +1,32 @@
+display: flex;
+arrange items one along with another..
+'''main axis = horizontal 
+'''cross axis = vertical
+we can position all child elements by applying properties to parent element.
+
+Along main axis:
+justify-content: <center,flex-start,flex-end,space-between,space-evenly,space-around>
+
+along cross axis:
+align-item:by default it is stretch
+align-item has same attributes as justify-content.
+<flex-start , flex-end , center>
+align-content: croos axis.
+
+
+==========
+flex-wrap: wrap   <it will wrap elemenets when space is not available>
+=======================
+flex-direction: row , column ....bydefult it is row
+column, == it turns the flex-box by 90.. main and cross axis interchange.
+
+==========================================
+Properties to flex box:
+1) flex-shrink: 0 //it will not shrink that box; by default it is 1..
+2) flex-grow:1  it will give left space of box assigned
+   box1: flexgrow = 2  it is 2/5 part to box1
+    box2: flexgrow = 3  it gives 3/5 part to box1;
+3) flex: <grow> <shrink> <basis>;
+4) align-self: flex-start  //// applied to each div... can be different for each div..  //cross axis
+using self property only on cross axis.
+

@@ -1,0 +1,29 @@
+1) Write global css first.
+typography
+variables
+spacing (margin and padding)
+colors
+Normalization:
+take every element to class root.
+remove all the existing defaults.. for each element
+example:
+:root{
+font-size:14px;
+button{
+background: unset;
+border:unset;
+}
+
+2)Avoid fixed sizes(px)
+no fixed heights
+
+3)Design Mobile first..
+mobile layouts are simpler...
+(mobile to web screen)    use min-width
+(web to mobile) use max-width
+-------------------------------------
+add media queries to add complexity i.e to make it for laptop or pc.
+eg: to make image responsive
+img{max-width:100%}
+---------------------------------
+Don't overdo breakpoints.... set only 1,2,3,4 at max...
